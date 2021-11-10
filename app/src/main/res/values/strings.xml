@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Controle Financeiro</string>
+    <string name="todo">TODO</string>
+    <string name="email">Digite seu email</string>
+    <string name="senha">Digite a senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="conta">Nao Possui Conta? Clique aqui</string>
+    <string name="cadastro">Faça seu Cadastro Abaixo!</string>
+    <string name="nome">Digite o nome</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="sair">Sair</string>
+    <string name="despesa">Despesa</string>
+    <string name="receita">Receita</string>
+    <string name="Rs">R$ 0.00</string>
+    <string name="data">21/10/2021</string>
+    <string name="categoria">Categoria</string>
+    <string name="descricao">Descrição</string>
+    <string name="saudacao">Carregando...</string>
+    <string name="saldo_atual">Saldo Atual</string>
+
+</resources>

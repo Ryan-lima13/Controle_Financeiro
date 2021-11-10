@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="activity.PrincipalActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/cor_fundo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewLista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textSaudacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:padding="10dp"
+            android:text="@string/saudacao"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textSaldoTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/Rs"
+            android:textAlignment="center"
+            android:textColor="@color/cor_titulo1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saldo_atual"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLista"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        fab:menu_icon="@drawable/ic_baseline_menu_24"
+        app:menu_colorPressed="@color/cor_fundo"
+        app:menu_colorNormal="@color/cor_fundo"
+
+        >
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_sair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_exit_to_app_24"
+            app:fab_colorNormal="@color/purple_500"
+            app:fab_colorPressed="@color/purple_500"
+            android:onClick="sair"
+            fab:fab_label="@string/sair"
+
+            fab:fab_size="mini" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_despesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_24"
+            app:fab_colorNormal="@color/purple_500"
+            app:fab_colorPressed="@color/purple_500"
+            android:onClick="adicionar_despesa"
+            fab:fab_label="@string/despesa"
+
+            fab:fab_size="mini" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_receita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_24"
+            app:fab_colorNormal="@color/purple_500"
+            app:fab_colorPressed="@color/purple_500"
+            android:onClick="adicionar_receita"
+            fab:fab_label="@string/receita"
+
+            fab:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
